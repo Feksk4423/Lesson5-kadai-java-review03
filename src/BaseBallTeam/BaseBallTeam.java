@@ -2,8 +2,8 @@ package BaseBallTeam;
 
 public class BaseBallTeam {
     String name;
-    double win;
-    double lose;
+    int win;
+    int lose;
     int drow;
 
     BaseBallTeam(String n, int w, int l, int d) {
@@ -14,7 +14,7 @@ public class BaseBallTeam {
     }
 
     double getRate() {
-        double rate = win / (win + lose);
+        double rate =(double) win / (win + lose);
         return rate;
     }
 
